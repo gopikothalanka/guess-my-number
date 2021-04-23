@@ -37,10 +37,10 @@ header{
   font-size: 1.5rem;
   }
   .dashboard {
-    width:900px;
     height:auto;
-    position: relative;
-    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 29%;
   }
   .left{
@@ -53,12 +53,12 @@ header{
     border-radius: 0.3rem; 
     text-align: center;
   }
-  .left p{
+  .left .message{
     font-size: 2rem;
     color: black;
 
   }
-  .left .guess{
+  .left .user-num{
     max-width: 7rem;
     max-height: 3rem;
     font-size: 2rem;
@@ -67,7 +67,7 @@ header{
     margin: auto;
     border-radius: 00.3rem;
   }
-  .btn-again{
+  .btn-restart{
     background-color: black;
     color: whitesmoke;
     min-height: 2rem;
@@ -88,15 +88,15 @@ header{
   .center{
     background:darkgray; 
     color: black;
-    width: 200px; 
-    height:200px;
+    width: 100px; 
+    height:100px;
     float:left;
     margin:10px;
     border-radius: 0.3rem; 
     text-align: center;
   }
-  .center p{
-    font-size: 2rem;
+  .center .number-display{
+    font-size: 5rem;
     color: black; 
   }
   .right{
