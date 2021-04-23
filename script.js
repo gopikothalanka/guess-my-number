@@ -29,7 +29,7 @@ function game(){
     if(guessed.value > 0 && guessed.value < 21){
       console.log('yes');
         if(guessed.value == randomNum){
-          displayMessage.textContent = "Your Correct";
+          displayMessage.textContent = "Your Correct👍";
           document.querySelector('.description').textContent="....🎉🎉Congrats🎉🎉.... ";
           document.body.style.backgroundColor = 'rgb(96, 179, 71)';
           number.textContent =randomNum;
@@ -47,12 +47,12 @@ function game(){
         gameScore.textContent= score;
         }
       }else {
-        displayMessage.textContent = "Enter Correct number";
+        displayMessage.textContent = "Enter Valid number";
         
       }
   }else{
    displayMessage.textContent = "Wasted";
-   document.querySelector('.description').textContent="YOU FAIL";
+   document.querySelector('.description').textContent="YOU FAIL👎";
    document.body.style.backgroundColor = 'rgb(139, 0, 0)';
    gameScore.textContent=0;
   }

@@ -113,7 +113,15 @@ header{
    margin: 1rem;
    font-size: 2rem;
   }
-  
+  .branding {
+    position: fixed;
+    bottom: 0;
+    color: red;
+  }
+  .branding a{
+    text-decoration: none;
+    color: whitesmoke;
+  }  
 
 
 
