@@ -24,12 +24,19 @@ header{
 }
 .guess{
   font-size: 13rem;
+  @media only screen and (max-width:550px) {
+    font-size: 6.5rem;  
+  }
   }
   .my{
     font-size: 4rem;
+    @media only screen and (max-width:550px) {
+      font-size: 2rem;  
+    }
   }
   .number{
     font-size: 13rem;
+   
   }
   .description{
   text-align: center;
@@ -41,7 +48,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 29%;
+    @media screen and (max-width:550px) {
+     p{
+     }
+    }
   }
   .left{
     background:darkgray; 
