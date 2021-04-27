@@ -16,21 +16,20 @@ body{
   background-color: black;
   color: aliceblue;
   font-family: 'Teko', sans-serif;
+  
 }
 header{
   font-family: 'RubensRegular', cursive;
   margin: 2rem 0 0 0;
   text-align: center;
+  
 }
-.guess{
+  .guess{
   font-size: 13rem;
-  @media only screen and (max-width:550px) {
-    font-size: 6.5rem;  
-  }
   }
   .my{
     font-size: 4rem;
-    @media only screen and 
+    
   }
   .number{
     font-size: 13rem;
@@ -43,8 +42,8 @@ header{
   }
   .dashboard {
     height:auto;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,200px);
     justify-content: center;
     
   }
@@ -90,6 +89,12 @@ header{
     font-family: 'Teko', sans-serif;
     font-size: 1rem;
   }
+  .center1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
   .center{
     background:darkgray; 
     color: black;
@@ -99,6 +104,8 @@ header{
     margin:10px;
     border-radius: 0.3rem; 
     text-align: center;
+    justify-content: center;
+
   }
   .center .number-display{
     font-size: 5rem;
@@ -129,11 +136,25 @@ header{
   }  
 
   @media only screen and (max-width:550px) {
-    .left, .center, .right{ 
-      width: 100%;
-      display: block;
+    .dashboard {
+      height:auto;
+      display: grid;
+      grid-template-columns: 200px;
+      justify-content: center;
       
     }
+    .guess{
+      font-size: 6.5rem;
+      }
+      .my{
+        font-size: 2rem;
+        
+      }
+      .number{
+        font-size: 6.5rem;
+       
+      }
+
    }
 
 
