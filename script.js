@@ -17,7 +17,7 @@ const highScore = document.querySelector('.highscore');
 const left =document.querySelector('.center');
 var randomNum = Math.trunc(Math.random()*21);
 //temporary
-console.log(randomNum);
+
 //temporary
 
 var score = 20;
@@ -38,16 +38,19 @@ function game(){
               highScore.textContent=score;
           }
         }else if(guessed.value > randomNum){
-          displayMessage.textContent = "Its HIGH";
+          displayMessage.textContent = `${guessed.value} is HIGH`;
+          document.querySelector('.user-num').value='';
           score--;
           gameScore.textContent= score;
         }else if (guessed.value < randomNum){
-        displayMessage.textContent = "Its LOW";
+        displayMessage.textContent = `${guessed.value} is LOW`;
+        document.querySelector('.user-num').value='';
         score--;
         gameScore.textContent= score;
         }
       }else {
         displayMessage.textContent = "Enter Valid number";
+        document.querySelector('.user-num').value='';
         
       }
   }else{
