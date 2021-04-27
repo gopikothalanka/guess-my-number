@@ -67,6 +67,7 @@ btnRestart.addEventListener('click',function(){
       number.textContent ="?";
       gameScore.textContent= 20;
       document.querySelector('.user-num').value='';
+      randomNum = Math.trunc(Math.random()*21);
 })
 
 
